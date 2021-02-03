@@ -16,4 +16,40 @@ public class RandomNumber {
             System.out.println("The number " + num + " is odd.");
         }
     }
+
+    public void tempScale(){
+        this.numChecker();
+        if(num == 0)
+        {
+            System.out.println("frozen");
+        }
+        else if(num >= 1 && num <=14)
+        {
+            System.out.println("cold");
+        }
+        else if(num >= 15 && num <=24)
+        {
+            System.out.println("cool");
+        }
+        else if(num >= 25 && num <=40)
+        {
+            System.out.println("warm");
+        }
+        else if(num >= 41 && num <=60)
+        {
+            System.out.println("hot");
+        }
+        else if(num >= 61 && num <=80)
+        {
+            System.out.println("very hot");
+        }
+        else if(num >= 81 && num <=99)
+        {
+            System.out.println("extremely hot");
+        }
+        else
+        {
+            System.out.println("boiling");
+        }
+    }
 }

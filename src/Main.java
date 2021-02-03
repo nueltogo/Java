@@ -7,6 +7,6 @@ public class Main {
 		System.out.println(morning.greet());*/
 
 		RandomNumber rand = new RandomNumber();
-		rand.numChecker();
+		rand.tempScale();
     }
 }
