@@ -7,18 +7,58 @@ public class RandomNumber {
         this.num = (int)(Math.random() * 100)+1;
     }
 
-    public void numChecker(){
-        generateRandNum();
-        if(num%2 == 0){
-            System.out.println("The number " + num + " is even.");
+    private void generateRandNumTen(){
+        this.num = (int)(Math.random()*10);
+    }
+
+    public void numChecker(int state){
+        if(state == 100){
+            this.generateRandNum();
+            if(num%2 == 0){
+                System.out.println("The number " + num + " is even.");
+            }
+            else{
+                System.out.println("The number " + num + " is odd.");
+            }
         }
-        else{
-            System.out.println("The number " + num + " is odd.");
+        else if(state == 10){
+            this.generateRandNumTen();
+            switch((int)num){
+                case 0:
+                    System.out.println(num + " zero");
+                    break;
+                case 1:
+                    System.out.println(num + " one");
+                    break;
+                case 2:
+                    System.out.println(num + " two");
+                    break;
+                case 3:
+                    System.out.println(num + " three");
+                    break;
+                case 4:
+                    System.out.println(num + " four");
+                    break;
+                case 5:
+                    System.out.println(num + " five");
+                    break;
+                case 6:
+                    System.out.println(num + " six");
+                    break;
+                case 7:
+                    System.out.println(num + " seven");
+                    break;
+                case 8:
+                    System.out.println(num + " eight");
+                    break;
+                case 9:
+                    System.out.println(num + " nine");
+            }
         }
     }
 
     public void tempScale(){
-        this.numChecker();
+        this.numChecker(100);
         if(num == 0)
         {
             System.out.println("frozen");
