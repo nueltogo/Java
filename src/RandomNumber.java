@@ -11,6 +11,18 @@ public class RandomNumber {
         this.num = (int)(Math.random()*10);
     }
 
+    private void generateRandNumNegThreePosThree(){
+        this.num = ((int)(Math.random()*6)+1) - 3;
+    }
+
+    public void countUntilZero(){
+
+        do{
+            generateRandNumNegThreePosThree();
+            System.out.println(num);
+        }while (num !=0 );
+    }
+
     public void numChecker(int state){
         if(state == 100){
             this.generateRandNum();
