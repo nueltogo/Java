@@ -1,4 +1,4 @@
-public class Trade {
+public abstract class Trade {
     private String ID;
     private String Symbol;
     private int price;
@@ -16,6 +16,8 @@ public class Trade {
         this.price = price;
         this.quantity = quantity;
     }
+
+    abstract double calcDividend();
 
     public int getQuantity() {
         return quantity;
